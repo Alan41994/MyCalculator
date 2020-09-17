@@ -10,10 +10,7 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
     EditText num1EditText, num2EditText;
-    Button addButton;
-    Button minusButton;
-    Button multiplyButton;
-    Button divideButton;
+    Button addButton , minusButton , multiplyButton , divideButton;
     TextView resultTextView;
 
     @Override
@@ -37,6 +34,8 @@ public class MainActivity extends AppCompatActivity {
                 int num2 = Integer.parseInt(num2EditText.getText().toString());
                 int result = num1 + num2;
                 resultTextView.setText(result+"");
+            }
+        });
 
     //เมื่อ user คลิกปุ่ม MINUS
         minusButton.setOnClickListener(new View.OnClickListener() {
@@ -46,7 +45,8 @@ public class MainActivity extends AppCompatActivity {
                 int num2 = Integer.parseInt(num2EditText.getText().toString());
                 int result = num1 - num2;
                 resultTextView.setText(result+"");
-
+            }
+        });
     //เมื่อ user คลิกปุ่ม MULTIPLY
         multiplyButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -55,7 +55,8 @@ public class MainActivity extends AppCompatActivity {
                 int num2 = Integer.parseInt(num2EditText.getText().toString());
                 int result = num1 * num2;
                 resultTextView.setText(result+"");
-
+            }
+        });
     //เมื่อ user คลิกปุ่ม DIVIDE
         divideButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -65,12 +66,6 @@ public class MainActivity extends AppCompatActivity {
                 int result = num1 / num2;
                 resultTextView.setText(result+"");
 
-            }
-        });
-            }
-        });
-            }
-        });
             }
         });
     }
